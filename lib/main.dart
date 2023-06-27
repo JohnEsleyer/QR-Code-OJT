@@ -7,7 +7,7 @@ import 'package:flutter/foundation.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 import './navbar.dart';
-
+import './login.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -19,11 +19,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'QR Code',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const Login(),
     );
   }
 }
